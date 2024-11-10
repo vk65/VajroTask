@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ClassifiedViewController" customModule="vajroTak" customModuleProvider="target">
+            <connections>
+                <outlet property="classWebview" destination="N8p-Wf-EOc" id="Hi6-e1-6ar"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lOF-DB-Zwb">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N8p-Wf-EOc">
+                            <rect key="frame" x="20" y="50" width="353" height="773"/>
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <wkWebViewConfiguration key="configuration">
+                                <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                <wkPreferences key="preferences"/>
+                            </wkWebViewConfiguration>
+                        </wkWebView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="N8p-Wf-EOc" secondAttribute="trailing" constant="20" id="57b-uo-bDI"/>
+                        <constraint firstItem="N8p-Wf-EOc" firstAttribute="leading" secondItem="lOF-DB-Zwb" secondAttribute="leading" constant="20" id="cjg-gs-boo"/>
+                        <constraint firstItem="N8p-Wf-EOc" firstAttribute="top" secondItem="lOF-DB-Zwb" secondAttribute="top" constant="50" id="rRU-lb-YrK"/>
+                        <constraint firstAttribute="bottom" secondItem="N8p-Wf-EOc" secondAttribute="bottom" constant="29" id="t0f-4e-5Zq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="lOF-DB-Zwb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Dro-wv-D5z"/>
+                <constraint firstItem="lOF-DB-Zwb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KRX-5f-TP0"/>
+                <constraint firstAttribute="bottom" secondItem="lOF-DB-Zwb" secondAttribute="bottom" id="dcU-z0-Dmr"/>
+                <constraint firstAttribute="trailing" secondItem="lOF-DB-Zwb" secondAttribute="trailing" id="mTG-Se-tvG"/>
+            </constraints>
+            <point key="canvasLocation" x="15" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
